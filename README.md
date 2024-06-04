@@ -1,3 +1,8 @@
+### Create 2 terminals one for frontend and the other for backend 
+ 
+ the command to run backend is **node app.js ** and frontend is npm start provide valid user credentials and login to your account and search for your favorite. 
+ I have used mongodb to store details.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
