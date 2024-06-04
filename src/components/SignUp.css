@@ -1,0 +1,119 @@
+/* src/components/Signup.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 154, 158, 0.7), rgba(250, 208, 196, 0.7)), url('https://www.example.com/image1.jpg') center/cover no-repeat; /* Replace with actual image URL */
+    filter: blur(10px);
+    opacity: 0;
+    animation: fadeImages 20s infinite;
+    z-index: -1;
+  }
+  
+  body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+  
+  @keyframes fadeImages {
+    0% {
+      background-image: url('https://imgs.search.brave.com/VxgE_eNUyrua6soVH03hf9aYOfqnhDsEsERlE_w188w/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvbW92aWUtOXB2/bWR0dno0Y2IweGwz/Ny5qcGc');
+      opacity: 1;
+    }
+    33% {
+      background-image: url('https://imgs.search.brave.com/eUVRJzpGR-uNlJjQyD8qCyaQFOPV7r9Bird_YzURSms/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvODI5/NDguanBn');
+      opacity: 1;
+    }
+    66% {
+      background-image: url('https://imgs.search.brave.com/HCje1u4PMrVA2KLUOlQZKbxyh5JmwWbVLyrzrudrkSI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jNC53/YWxscGFwZXJmbGFy/ZS5jb20vd2FsbHBh/cGVyLzIyNy8zODYv/NDQ5L21vdmllLXNj/ZW5lcy1qb2tlci0y/MDE5LW1vdmllLWhk/LXdhbGxwYXBlci1w/cmV2aWV3LmpwZw');
+      opacity: 1;
+    }
+    100% {
+      background-image: url('https://imgs.search.brave.com/eb8OeE9w0NjbXx0650rO7H7XQ_GOwyG0MXxeQ_GNPoQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDIxNzc0/MjMuanBn');
+      opacity: 1;
+    }
+}
+  
+  .signup {
+    max-width: 400px;
+    width: 100%;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .signup h1 {
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .signup form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .signup input[type="email"],
+  .signup input[type="password"],
+  .signup input[type="submit"] {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  .signup input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .signup input[type="submit"]:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  
+  .signup p {
+    margin: 20px 0;
+    color: #555;
+  }
+  
+  .signup a {
+    color: #28a745;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .signup a:hover {
+    color: #218838;
+  }  
